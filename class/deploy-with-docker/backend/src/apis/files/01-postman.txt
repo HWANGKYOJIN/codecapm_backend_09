@@ -1,0 +1,11 @@
+#포스트맨에서 요청하는 이미지 요청하는 방법(1개)
+
+Header => X
+
+헤더 모두 지우고 
+
+Body => form-data
+key => operations     value = { "query": "mutation uploadFile($file: Upload!) { uploadFile(file: $file) }", "variables": { "file": null } }
+key => map            value = { "0": ["variables.file"] }
+0           file로 변경   [파일선택] 강아지.jpeg (내 사진 선택)
+
