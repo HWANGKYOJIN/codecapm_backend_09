@@ -12,6 +12,7 @@ import { PointsTransactionsModule } from './apis/pointsTransactions/pointsTransa
 import { UsersModule } from './apis/users/users.module';
 import { PaymentMoudle } from './apis/payment/payment.module';
 import { FilesModule } from './apis/files/files.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -41,5 +42,6 @@ import { FilesModule } from './apis/files/files.module';
       synchronize: true,
     }),
   ],
+  controllers: [AppController]
 })
 export class AppModule {}
